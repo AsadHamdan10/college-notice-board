@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notice Board</title>
+    <style>
+        * {
+            box-sizing: border-box;margin: 0;padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+        .header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .page-title h2 {
+            font-size: 26px;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+        .page-title p {
+            color: #6b7280;
+        }
+        .notice-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .notice-card {
+            background: white;
+            border-radius: 10px;
+            padding: 22px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #2563eb;
+        }
+        .notice-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        .notice-card p {
+            color: #4b5563;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .date {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .contact {
+            margin-top: 30px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .contact h2 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+        .contact p {
+            color: #4b5563;
+            margin: 5px 0;
+        }
+        .footer {
+            margin-top: 35px;
+            padding: 18px;
+            text-align: center;
+            background: #111827;
+            color: #d1d5db;
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .notice-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .container {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VIT University</h1>
+        <p>School of Information Technology</p>
+    </header>
+    <main class="container">
+        <section class="page-title">
+            <h2>College Notice Board</h2>
+            <p>Latest academic and departmental announcements</p>
+        </section>
+        <section class="notice-grid">
+            <article class="notice-card">
+                <h3>Internal Assessment</h3>
+                <p>
+                    The Internal Assessment examination will be conducted
+                    as per the academic schedule. Students are requested
+                    to prepare accordingly.
+                </p>
+                <span class="date">
+                    Date: 15 October 2026
+                </span>
+            </article>
+            <article class="notice-card">
+                <h3>Placement Drive</h3>
+                <p>
+                    Students are informed to register for the upcoming
+                    campus placement drive and complete the required
+                    registration process before the deadline.
+                </p>
+                <span class="date">
+                    Date: 12 October 2026
+                </span>
+            </article>
+            <article class="notice-card">
+                <h3>DevOps Laboratory</h3>
+                <p>
+                    Students are requested to complete and submit their
+                    DevOps laboratory assessment within the scheduled
+                    submission period.
+                </p>
+                <span class="date">
+                    Date: 10 October 2026
+                </span>
+            </article>
+        </section>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>
+                <strong>Department Office:</strong>
+                School of Information Technology
+            </p>
+            <p>
+                <strong>Email:</strong>
+                department@vit.ac.in
+            </p>
+            <p>
+                <strong>Phone:</strong>
+                +91 416 220 2020
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        College Notice Board &copy; 2026 | School of Information Technology
+    </footer>
+</body>
+</html>
